@@ -66,7 +66,7 @@ const plants = ref([
     "scientificName": "Agathis philippinensis", 
     "diseases": ["High Blood Pressure (Hypertension)", "Relapse (Bughat)"], 
     "procedures": ["Decoction", "Decoction"],
-    "image": "images/salumayag.jpg"
+    "image": "/ethnomedix/images/salumayag.jpg"
   },
   { 
     "id": 2,
