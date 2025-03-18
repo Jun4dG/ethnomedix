@@ -1,0 +1,35 @@
+{
+  "name": "ethno-medix",
+  "version": "1.0.0",
+  "description": "An offline/static EthnoMedix app",
+  "author": "Junford",
+  "main": "electron.js",
+  "scripts": {
+  "build": "nuxt build",
+  "generate": "nuxi generate",
+  "predeploy": "npm run generate",
+  "deploy": "gh-pages -d .output/public"
+},
+  "build": {
+    "appId": "com.ethnomedix.app",
+    "productName": "EthnoMedix",
+    "directories": {
+      "output": "dist-electron"
+    },
+    "files": [
+      "dist/**/*",
+      "electron.js"
+    ],
+    "win": {
+      "target": "nsis"
+    }
+  },
+  "dependencies": {
+    "nuxt": "^3.16.0"
+  },
+  "devDependencies": {
+    "electron": "^35.0.2",
+    "electron-builder": "^25.1.8",
+    "gh-pages": "^6.3.0"
+  }
+}
